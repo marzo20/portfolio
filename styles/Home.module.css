@@ -7,9 +7,12 @@
   padding: 4rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: xx-large;
+  color: white;
+  gap: 5rem;
 }
 
 .footer {
@@ -114,3 +117,4 @@
     flex-direction: column;
   }
 }
+
