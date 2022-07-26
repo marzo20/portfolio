@@ -1,32 +1,4 @@
 /* element selectors that apply to everything go here */
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: rgba(13, 13, 14, 0.684);
-    color: white;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-nav {
-  font-size:x-large;
-  display: flex;
-  gap: 3rem;
-  padding: 2rem 4rem 2rem 2rem;
-  justify-content: flex-end;
-}
-.nav:hover {
-  transform: scale(2);
-  /* transform: translate(0, 10px); */
-  transition: all 1s;
-  color:aquamarine;
-}
-* {
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

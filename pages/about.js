@@ -1,9 +1,9 @@
 // special SSR image component
-import Image from "next/image"
-import styles from '../styles/About.module.css'
+import {Element} from "react-scroll"
+
 export default function About() {
     return (
-        <>
+        <Element id="about" name="about">
             <h1>About</h1>
             <h2>{`Wonjune's About Page`}</h2>
             <p className={[styles.extraGreen, styles.bigFont].join(" ")}>I am a super cool software engineer now. I make super cool stuff with the codes.</p>
@@ -33,6 +33,6 @@ export default function About() {
                 height={300}
             />
 
-        </>
+        </Element>
     )
 }
