@@ -1,6 +1,6 @@
 // built in link from next.js
 import React, { useState } from 'react'
-import { Link } from 'react-scroll'
+import { Link, animateScroll as scroll, scroller } from 'react-scroll'
 import { Transition } from "@headlessui/react" //for smooth transition b/w elemnts
 
 export default function Navbar() {
@@ -12,19 +12,19 @@ export default function Navbar() {
                     <div className="flex items-center sm:mx-10 md:mx-20 justify-between w-full">
                         <div className="flex justify-center items-center flex-shrink-0 ml-10">
                             <h1 className="font-bold text-xl cursor-pointer">
-                                Stream<span className="text-blue-600">line</span>
+                                
                             </h1>
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-10 flex itmes-baseline space-x-4">
-                                <Link activeClass='Home' to="Home" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-md">Home</Link>
+                                <Link activeClass='home' to="home" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-md">Home</Link>
                                 <Link activeClass='About' to="about" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">About</Link>
-                                <Link activeClass='Skills' to="skills" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Skills</Link>
+                                <Link activeClass='skills' to="skills" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Skills</Link>
                                 <Link activeClass='Work' to="work" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Projects</Link>
                             </div>
                         </div>
                         <div className="flex justify-center items-center flex-shrink-0">
-                            <h1 className="font-semibold text-lg cursor-pointer hidden md:block">Say<span className="text-blue-600">hi</span>
+                            <h1 className="font-semibold text-lg cursor-pointer hidden md:block"><span className="text- blue-600">Contact</span>
                             </h1>
                         </div>
                     </div>

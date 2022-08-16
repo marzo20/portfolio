@@ -3,7 +3,8 @@ import Head from 'next/head'
 import Navbar from '../components/navbar'
 import HomePage from './homePage'
 import Skills from './skills'
-
+import Work from './work'
+import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div>
@@ -13,6 +14,8 @@ export default function Home() {
        <Navbar />
        <HomePage />
        <Skills />
+       <Work />
+       <Footer />
     </div>
     // <div className={styles.container}>
     //     <title>Portfolio</title>
