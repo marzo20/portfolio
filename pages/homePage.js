@@ -3,6 +3,9 @@ import Image from "next/image"
 import heroImage from "../public/hi.png"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 import { AiOutlineMail } from "react-icons/ai"
+import { Link, animateScroll as scroll, scroller } from 'react-scroll'
+import { Transition } from "@headlessui/react" //for smooth transition b/w elemnts
+
 export default function homePage() {
     return (
         <Element id="home" name="home">
@@ -18,7 +21,7 @@ export default function homePage() {
                         <h1 className="font-bold text-5xl text-left mb-5">
                             Full-Stack Software Developer
                         </h1>
-                        
+
                         <p className="text-left font-normal mb-5 flex-wrap">
                             I am an adaptable Korean Software Engineer, who learned teamwork, customer service skills from previous work experience in restaurant industry. By living in different countries, I have broadened my knowledge and perspectives by understanding different cultures. I am a goal achiever who finds enjoyment from problem solving.
                         </p>
@@ -28,15 +31,23 @@ export default function homePage() {
                     </div>
                 </div>
                 <div className="flex itmes-center justify-between max-w-[330px] m-auto py-4">
+                    <a href="https://www.linkedin.com/in/wonjune-jung">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaLinkedin />
                     </div>
+                    </a>
+                    <a href="https://github.com/marzo20">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaGithub />
                     </div>
+                    </a>
+                    <Link 
+                            activeClass='Contact' to='contact' smooth={true} offset={50} duration={500}
+                            className="font-semibold text-lg cursor-pointer hidden md:block">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <AiOutlineMail />
                     </div>
+                            </Link>
                 </div>
             </div>
 

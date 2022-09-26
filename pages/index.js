@@ -4,17 +4,19 @@ import Navbar from '../components/navbar'
 import HomePage from './homePage'
 import Skills from './skills'
 import Work from './work'
+import Contact from './contact'
 import Footer from '../components/Footer'
+
 export default function Home() {
   return (
     <div>
        <Head>
-
        </Head>
        <Navbar />
        <HomePage />
        <Skills />
        <Work />
+       <Contact />
        <Footer />
     </div>
     // <div className={styles.container}>

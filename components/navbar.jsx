@@ -17,15 +17,16 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-10 flex itmes-baseline space-x-4">
-                                <Link activeClass='home' to="home" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-md">Home</Link>
-                                <Link activeClass='About' to="about" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">About</Link>
+                                <Link activeClass='home' to="home" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-md">About</Link>
                                 <Link activeClass='skills' to="skills" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Skills</Link>
                                 <Link activeClass='Work' to="work" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Projects</Link>
                             </div>
                         </div>
                         <div className="flex justify-center items-center flex-shrink-0">
-                            <h1 className="font-semibold text-lg cursor-pointer hidden md:block"><span className="text- blue-600">Contact</span>
-                            </h1>
+                            <Link 
+                            activeClass='Contact' to='contact' smooth={true} offset={50} duration={500}
+                            className="font-semibold text-lg cursor-pointer hidden md:block"><span className="text- blue-600">Contact</span>
+                            </Link>
                         </div>
                     </div>
                     {/* for mobile screen */}
