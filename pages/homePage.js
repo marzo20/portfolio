@@ -6,6 +6,7 @@ import { AiOutlineMail } from "react-icons/ai"
 import { Link, animateScroll as scroll, scroller } from 'react-scroll'
 import { Transition } from "@headlessui/react" //for smooth transition b/w elemnts
 
+
 export default function homePage() {
     return (
         <Element id="home" name="home">
@@ -25,8 +26,8 @@ export default function homePage() {
                         <p className="text-left font-normal mb-5 flex-wrap">
                             I am an adaptable Korean Software Engineer, who learned teamwork, customer service skills from previous work experience in restaurant industry. By living in different countries, I have broadened my knowledge and perspectives by understanding different cultures. I am a goal achiever who finds enjoyment from problem solving.
                         </p>
-                        <a href="#" className="font-semibold text-white md:mt-10 mt-5 pt-5 bg-indigo-900 rounded-md w-60 h-16 text-lg hover:bg-black">
-                            See my Portfolio!
+                        <a href="/resume.pdf" className="font-semibold text-white md:mt-10 mt-5 pt-5 bg-indigo-900 rounded-md w-60 h-16 text-lg hover:bg-black">
+                            See my Resume!
                         </a>
                     </div>
                 </div>
