@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai"
 import Link from 'next/link'
 import { HiOutlineChevronDoubleUp } from "react-icons/hi"
 import Image from 'next/image'
+import contact from "../public/contact.jpeg"
 
 export default function Contact() {
     async function handleOnSubmit(e){
@@ -36,7 +37,7 @@ export default function Contact() {
                         <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
                             <div className="lg:p-4 h-full">
                                 <div>
-                                    <Image className="rounded-xl hover:scale-105 ease-in duration-300" src="https://usa.visa.com/dam/VCOM/global/contact-us/woman-using-laptop-on-office-desk-800x450.jpg" />
+                                    <Image className="rounded-xl hover:scale-105 ease-in duration-300" src={contact} />
                                 </div>
                                 <div>
                                     <h2 className="py-2">Wonjune Jung</h2>
@@ -44,7 +45,7 @@ export default function Contact() {
                                     <p className="py-4">I am available for freelance or full-time positions. Contact me and let's talk.</p>
                                 </div>
                                 <div>
-                                    <p classNAme="uppercase pt-8">Connect With me</p>
+                                    <p className="uppercase pt-8">Connect With me</p>
                                     <div className="flex itmes-center justify-between max-w-[330px] m-auto py-4">
                                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                             <FaLinkedin />
